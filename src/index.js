@@ -4,6 +4,7 @@ const connect=require("./config/db");
 require("dotenv").config()
 const cookieParser=require("cookie-parser")
 const createEntityController=require("./controllers/createEntityController")
+const userController=require("./controllers/userController")
 
 const app=express()
 app.use(cors())
@@ -14,6 +15,7 @@ app.use(express.urlencoded({
 }))
 
 app.use("/pets",createEntityController)
+app.use("/user",userController)
 
 
 const PORT = process.env.PORT  || 3500;

@@ -18,7 +18,7 @@ const createEntitySchema=new mongoose.Schema({
     walksPerDay:{type:Number,required:true},
     homeType:{type:String,required:true},
     areaSize:{type:String,required:true},
-    emergencyTransport:{type:String,required:true,default:"Yes"}
+    emergencyTransport:{type:String,default:"Yes"}
 
 },{
     timestamps:true,
